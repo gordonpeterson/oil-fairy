@@ -1,0 +1,56 @@
+body{
+	position: relative;
+}
+
+.header{
+	padding-top: 20px;
+}
+
+.page-wrapper{
+	background: url("../images/bg.jpg") #c8d8e6 no-repeat;
+	// margin-bottom: 500px;
+}
+
+.container{
+	padding-bottom: 657px;
+	&:before{
+		background: url("../images/sun.png");
+		content: "";
+		position: absolute;
+		width: 1067px;
+		height: 530px;
+		bottom: 24px;
+		left: 134px;
+	}
+}
+
+.cloud{
+	position: absolute;
+	background: no-repeat;
+	&.large{
+		background: url("../images/cloud-large.png") ;
+		width: 1230px;
+		height: 435px;
+	}
+	&.medium{
+		background: url("../images/cloud-medium.png") ;
+		width: 800px;
+		height: 460px;
+	}
+	&.small{
+		background: url("../images/cloud-small.png") ;
+		width: 405px;
+		height: 220px;
+	}
+}
+
+
+.footer{
+	background: url("../images/silhouette.png") ;
+	position: absolute;
+	height: 757px;
+	bottom: -60px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
