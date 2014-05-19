@@ -4,15 +4,20 @@ body{
 
 .header{
 	padding-top: 20px;
+	background: pink;
 }
 
 .page-wrapper{
-	background: url("../images/bg.jpg") #c8d8e6 no-repeat;
+	background: url("../images/bg.jpg") #c8d8e6 ;
+	margin: 0 auto;
+	max-width: 1600px;
 	// margin-bottom: 500px;
 }
 
 .container{
 	padding-bottom: 657px;
+	background: lightorange;
+	z-index: 999;
 	&:before{
 		background: url("../images/sun.png");
 		content: "";
@@ -24,6 +29,15 @@ body{
 	}
 }
 
+.clouds{
+	position: absolute;
+	top: 0px;
+	height: 0;
+	overflow: visible;
+	height: 30px;
+	width: 110%;
+	z-index: 0;
+}
 .cloud{
 	position: absolute;
 	background: no-repeat;
@@ -48,9 +62,12 @@ body{
 .footer{
 	background: url("../images/silhouette.png") ;
 	position: absolute;
-	height: 757px;
+	height: 157px;
 	bottom: -60px;
+	padding-top: 600px;
 	left: 0;
 	right: 0;
 	text-align: center;
+	vertical-align: bottom;
+	color: white;
 }

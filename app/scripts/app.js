@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('blahApp', [
+angular.module('theOilFairy', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
