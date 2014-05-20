@@ -1,6 +1,9 @@
 $footerHeight: 755px;
 $maxWidth: 1600px;
 $darkColor: #332C2A;
+$darkColor: #36312F;
+$darkColor: #362f2d;
+$lightBlue: #c5d3e1;
 
 a{
 	color: $darkColor;
@@ -14,9 +17,22 @@ a{
   background-color: $darkColor;
 }
 
+.jumbotron{
+	background: rgba( white, .5);
+	h4{
+	}
+	.fairy{
+		float: left;
+		margin-top: 25px;
+		width: 184px;
+		height: 205px;
+	}
+}
+
 
 body{
 	position: relative;
+	background: $darkColor;
 }
 
 .header{
@@ -28,12 +44,27 @@ body{
 	h3{
 		padding-bottom: 0;
 	}
+
+	.logo{
+		text-indent: -9999px;
+		background: url("../images/logo-text.png") no-repeat;
+		width: 230px;
+		height: 50px;
+		// float: left;
+		// border: 1px dashed $darkColor;
+		// border-radius: 3px;
+	}
+
+	.nav{
+		float: right;
+	}
+
 }
 
 .page-wrapper{
 	margin: 0 auto;
 	max-width: $maxWidth;
-	background: url("../images/bg.jpg") #c8d8e6 ;
+	background: url("../images/bg.jpg") $lightBlue no-repeat;
 	overflow: hidden;
 	// margin-bottom: 500px;
 }
@@ -50,6 +81,30 @@ body{
 	position: relative;
 	padding: 0;
 	margin: 0;
+
+
+}
+
+.footer-content{
+	$width: 600px;
+	color: white;
+	position: absolute;
+	width: $width;
+	left: 50%;
+	margin-left: $width/-2;
+	height: 30px;
+	bottom: 0;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: .85em;
+	&, a{
+		color: lighten( $darkColor, 50%);
+	}
+	a{
+		font-size: 1.15em;
+	}
+	.copyright{
+	}
 }
 
 .sun{
@@ -59,7 +114,7 @@ body{
 	position: absolute;
 	width: $width;
 	height: 530px;
-	bottom: 155px;
+	bottom: 80px;
 	left: 50%;
 	margin-left: $width/-2;
 }
@@ -72,7 +127,7 @@ body{
 		width: 1230px;
 		height: 435px;
 		right: 0px;
-		bottom: 255px;
+		bottom: 185px;
 	}
 	&.medium{
 		background: url("../images/cloud-medium.png") ;
@@ -83,10 +138,8 @@ body{
 		background: url("../images/cloud-small.png") ;
 		width: 405px;
 		height: 220px;
-		right: 50px;
-		left: 50%;
-		margin-left: 100px;
-		bottom: 240px;
+		left: 40%;
+		top: 120px;
 	}
 }
 

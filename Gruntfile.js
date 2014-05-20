@@ -1,4 +1,4 @@
-// Generated on 2014-05-16 using generator-angular 0.7.1
+// Generated on 2014-05-20 using generator-angular 0.7.1
 'use strict';
 
 // # Globbing
@@ -284,7 +284,7 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'bower_components/**/*',
-            'images/{,*/}*.{webp}',
+            'images/{,*/}*',
             'fonts/*'
           ]
         }, {
@@ -312,7 +312,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'compass:dist',
-        'imagemin',
+        // 'imagemin'
         'svgmin'
       ]
     },
@@ -393,7 +393,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'rev',
+    // 'rev',
     'usemin',
     'htmlmin'
   ]);
