@@ -1,30 +1,67 @@
+$footerHeight: 755px;
+$maxWidth: 1600px;
+$darkColor: #332C2A;
+
+a{
+	color: $darkColor;
+	&:hover{
+		color: lighten($darkColor, 10%)
+	}
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: white;
+  background-color: $darkColor;
+}
+
+
 body{
 	position: relative;
-	background: url("../images/bg.jpg") #c8d8e6 ;
 }
 
 .header{
-	padding-top: 20px;
+	padding: 20px;
+	border: none;
+	max-width: 1200px;
+	margin: 0 auto 19px;
+
+	h3{
+		padding-bottom: 0;
+	}
 }
 
 .page-wrapper{
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: $maxWidth;
+	background: url("../images/bg.jpg") #c8d8e6 ;
+	overflow: hidden;
 	// margin-bottom: 500px;
 }
 
 .container{
-	z-index: 999;
+	// z-index: 999;
+}
+
+
+.footer{
+	height: $footerHeight;
+	color: white;
+	border: none;
+	position: relative;
+	padding: 0;
+	margin: 0;
 }
 
 .sun{
+	$width: 1067px;
 	background: url("../images/sun.png");
 	content: "";
 	position: absolute;
-	width: 1067px;
+	width: $width;
 	height: 530px;
 	bottom: 155px;
-	left: 134px;
+	left: 50%;
+	margin-left: $width/-2;
 }
 
 .cloud{
@@ -48,26 +85,19 @@ body{
 		height: 220px;
 		right: 50px;
 		left: 50%;
-		margin-left: -620px;
+		margin-left: 100px;
 		bottom: 240px;
 	}
 }
 
-$footerHeight: 800px;
 
 .foreground{
 	background: url("../images/silhouette.png") ;
 	position: absolute;
 	height: $footerHeight;
 	bottom: 0;
-	width: 100%;
-	z-index: 5;
-}
-
-
-.footer{
-	height: $footerHeight;
-	color: white;
-	border: none;
-	position: relative;
+	width: $maxWidth;
+	margin-left: $maxWidth/-2;
+	left: 50%;
+	// z-index: 5;
 }
