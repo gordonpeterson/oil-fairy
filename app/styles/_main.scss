@@ -64,7 +64,8 @@ body{
 .page-wrapper{
 	margin: 0 auto;
 	max-width: $maxWidth;
-	background: url("../images/bg.jpg") $lightBlue no-repeat;
+	background: url("../images/scene-bg.jpg") $lightBlue no-repeat;
+	background-position: bottom;
 	overflow: hidden;
 	// margin-bottom: 500px;
 }
