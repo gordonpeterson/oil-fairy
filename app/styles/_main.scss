@@ -1,5 +1,5 @@
 $footerHeight: 755px;
-$maxWidth: 1600px;
+$maxWidth: 1200px;
 $darkColor: #332C2A;
 $darkColor: #36312F;
 $darkColor: #362f2d;
@@ -32,7 +32,7 @@ a{
 
 body{
 	position: relative;
-	background: $darkColor;
+	background: white;
 }
 
 .header{
@@ -64,26 +64,43 @@ body{
 .page-wrapper{
 	margin: 0 auto;
 	max-width: $maxWidth;
-	background: url("../images/scene-bg.jpg") $lightBlue no-repeat;
+	background: url("../images/scene-bg.png") white no-repeat;
 	background-position: bottom;
 	overflow: hidden;
 	// margin-bottom: 500px;
 }
 
 .container{
-	// z-index: 999;
 }
 
+
+.lavender-front,
+.lavender-back{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.lavender-back{
+	left: 0;
+	height: 630px;
+	background: transparent url("../images/lavender-back.png") no-repeat;
+}
+.lavender-front{
+	right: 0;
+	height: 630px;
+	background: transparent url("../images/lavender-front.png") no-repeat;
+}
 
 .footer{
 	height: $footerHeight;
 	color: white;
 	border: none;
-	position: relative;
 	padding: 0;
 	margin: 0;
-
-
+	overflow: hidden;
+	position: relative;
 }
 
 .footer-content{
@@ -108,50 +125,4 @@ body{
 	}
 }
 
-.sun{
-	$width: 1067px;
-	background: url("../images/sun.png");
-	content: "";
-	position: absolute;
-	width: $width;
-	height: 530px;
-	bottom: 80px;
-	left: 50%;
-	margin-left: $width/-2;
-}
 
-.cloud{
-	position: absolute;
-	background: no-repeat;
-	&.large{
-		background: url("../images/cloud-large.png") ;
-		width: 1230px;
-		height: 435px;
-		right: 0px;
-		bottom: 185px;
-	}
-	&.medium{
-		background: url("../images/cloud-medium.png") ;
-		width: 800px;
-		height: 460px;
-	}
-	&.small{
-		background: url("../images/cloud-small.png") ;
-		width: 405px;
-		height: 220px;
-		left: 40%;
-		top: 120px;
-	}
-}
-
-
-.foreground{
-	background: url("../images/silhouette.png") ;
-	position: absolute;
-	height: $footerHeight;
-	bottom: 0;
-	width: $maxWidth;
-	margin-left: $maxWidth/-2;
-	left: 50%;
-	// z-index: 5;
-}
