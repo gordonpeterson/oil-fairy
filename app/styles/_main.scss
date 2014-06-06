@@ -1,8 +1,9 @@
-$footerHeight: 755px;
+$footerHeight: 320px;
 $maxWidth: 1200px;
 $darkColor: #332C2A;
 $darkColor: #36312F;
 $darkColor: #362f2d;
+$darkColor: #BD8DEC;
 $lightBlue: #c5d3e1;
 
 a{
@@ -71,8 +72,16 @@ body{
 }
 
 .container{
+	margin: 0 auto;
 }
 
+.jumbotron{
+	position: relative;
+	background: transparent;
+	img{
+		max-width: 100%;
+	}
+}
 
 .lavender-front,
 .lavender-back{
@@ -84,17 +93,16 @@ body{
 
 .lavender-back{
 	left: 0;
-	height: 630px;
+	height: 310px;
 	background: transparent url("../images/lavender-back.png") no-repeat;
 }
 .lavender-front{
 	right: 0;
-	height: 630px;
+	height: 340px;
 	background: transparent url("../images/lavender-front.png") no-repeat;
 }
 
-.footer{
-	height: $footerHeight;
+.footer{ height: $footerHeight;
 	color: white;
 	border: none;
 	padding: 0;
@@ -115,6 +123,8 @@ body{
 	text-align: center;
 	vertical-align: bottom;
 	font-size: .85em;
+	background: #BD8DEC;
+	background: transparentize( #BD8DEC, .2);
 	&, a{
 		color: lighten( $darkColor, 50%);
 	}
